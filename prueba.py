@@ -14,7 +14,7 @@ solver.Add(divertirse<=4)
 solver.Add(estudiar-divertirse<=1)
 
 #creamos la funcion objetivo
-solver.Maximize(2*divertirse)
+solver.Maximize(estudiar+divertirse)
 
 #resolvemos el problema
 status = solver.Solve()
